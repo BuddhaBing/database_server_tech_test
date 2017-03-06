@@ -12,14 +12,12 @@ describe KeyValue do
     before(:each) do
       KeyValue.create
       subject { KeyValue.instance }
-      # subject.pair("somekey", "somevalue")
       subject.pairs["somekey"] = "somevalue"
     end
     it 'stores the key value pair that is passed in' do
       expect(subject.pairs["somekey"]).to eq("somevalue")
     end
     it 'allows to add additional key value pairs' do
-      # subject.pair("someotherkey", "someothervalue")
       subject.pairs["someotherkey"] = "someothervalue"
       expect(subject.pairs["someotherkey"]).to eq("someothervalue")
     end
