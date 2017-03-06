@@ -9,4 +9,13 @@ You receive a message from a prospective employer:
 
 Create a new git repository and write code to fulfill the brief to the best of your ability. We will be looking for clean, well tested code in your choice of technology. In addition, the last sentence of the brief implies that you should consider how the code could easily be extended to add an as-yet-unknown data store.
 
-If you still have time at the end of the day, you can extend the code by adding a data store of your choice.
+### Usage
+
+```
+$ git clone
+$ cd database_server_tech_test
+$ bundle
+$ rackup
+$ curl "http://localhost:4000/set?somekey=somevalue"
+$ curl "http://localhost:4000/get?key=somekey"
+```

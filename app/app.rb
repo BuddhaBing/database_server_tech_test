@@ -1,6 +1,4 @@
 require 'sinatra/base'
-require "sinatra/json"
-require 'json'
 require 'slim'
 require_relative 'models/key_value'
 require_relative 'controllers/key_values'
