@@ -12,10 +12,20 @@ Create a new git repository and write code to fulfill the brief to the best of y
 ### Usage
 
 ```
-$ git clone
+$ git clone https://github.com/treborb/database_server_tech_test.git
 $ cd database_server_tech_test
 $ bundle
 $ rackup
 $ curl "http://localhost:4000/set?somekey=somevalue"
 $ curl "http://localhost:4000/get?key=somekey"
+```
+
+### Alternate usage
+```
+$ git clone https://github.com/treborb/database_server_tech_test.git
+$ cd database_server_tech_test
+$ bundle
+$ rackup
+$ open "http://localhost:4000/set?somekey=somevalue"
+$ open "http://localhost:4000/get?key=somekey"
 ```
