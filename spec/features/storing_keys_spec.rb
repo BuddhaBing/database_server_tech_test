@@ -27,7 +27,7 @@ feature 'Storing and retrieving key/value pairs using the API' do
   describe 'API' do
     it 'I can store a key value pair by passing them as URL params' do
       get "http://localhost:4000/set?somekey=somevalue"
-      expect(response.body).to eq('somevalue')
+      expect(response.body).to eq('Success')
     end
 
     it 'I can retrieve a value by passing the corresponding key as a URL param' do
