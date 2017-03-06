@@ -5,7 +5,7 @@ class DatabaseServer < Sinatra::Base
   end
 
   get '/get' do
-    
+
   end
 
 end
