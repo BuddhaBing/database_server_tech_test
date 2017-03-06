@@ -2,17 +2,16 @@ class KeyValue
 
   attr_reader :pairs
 
-  def self.create(key, val)
-    @key_val = KeyValue.new(key, val)
+  def self.create
+    @key_val = KeyValue.new
   end
 
   def self.instance
     @key_val
   end
 
-  def initialize(key, val)
+  def initialize
     @pairs = {}
-    @pairs[key] = val
   end
 
   def add_pair(key, val)
