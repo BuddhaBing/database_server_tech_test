@@ -10,6 +10,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 require 'rspec'
+require 'airborne'
 
 Capybara.app = DatabaseServer
 Capybara.default_driver = :poltergeist

@@ -13,10 +13,12 @@ group :test do
   gem 'rspec-sinatra'
   gem 'database_cleaner'
   gem 'simplecov', require: false
+  gem 'airborne'
 end
 
 gem 'sinatra'
 gem 'sinatra-flash'
+gem 'sinatra-json'
 gem 'sinatra-partial'
 gem 'slim'
 gem 'poltergeist'
