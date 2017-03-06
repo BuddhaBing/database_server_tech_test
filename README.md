@@ -9,6 +9,11 @@ You receive a message from a prospective employer:
 
 Create a new git repository and write code to fulfill the brief to the best of your ability. We will be looking for clean, well tested code in your choice of technology. In addition, the last sentence of the brief implies that you should consider how the code could easily be extended to add an as-yet-unknown data store.
 
+### Technologies used
+
+Ruby version 2.3.3
+Sinatra
+
 ### Usage
 ```
 $ git clone https://github.com/treborb/database_server_tech_test.git
