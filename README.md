@@ -11,7 +11,8 @@ Create a new git repository and write code to fulfill the brief to the best of y
 
 ### Technologies used
 
-Ruby version 2.3.3
+Ruby v2.3.3
+
 Sinatra
 
 ### Usage
