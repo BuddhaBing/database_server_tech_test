@@ -14,8 +14,4 @@ class KeyValue
     @pairs = {}
   end
 
-  def add_pair(key, val)
-    @pairs[key] = val
-  end
-
 end

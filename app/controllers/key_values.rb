@@ -14,4 +14,5 @@ class DatabaseServer < Sinatra::Base
       @key_val.pairs[params.values.first]
     end
   end
+  
 end
