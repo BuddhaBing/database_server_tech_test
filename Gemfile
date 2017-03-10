@@ -7,12 +7,10 @@ group :test do
   gem 'rake'
   gem 'rubocop-rspec', require: false
   gem 'rubocop', require: false
-  gem 'coveralls', require: false
+  gem 'codecov', :require => false, :group => :test
   gem 'capybara'
   gem 'pry-byebug', require: false
   gem 'rspec-sinatra'
-  gem 'database_cleaner'
-  gem 'simplecov', require: false
   gem 'airborne'
 end
 
@@ -20,6 +18,5 @@ gem 'sinatra'
 gem 'sinatra-flash'
 gem 'sinatra-json'
 gem 'sinatra-partial'
-gem 'slim'
 gem 'poltergeist'
 gem 'pry', require: false

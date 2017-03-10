@@ -1,5 +1,17 @@
-## Database server tech test
-This is a practice a tech test given to me by Makers Academy to demonstrate my understanding of web technologies. It an actual tech test that was given to one of the coaches when they applied for a dev role.
+# Database Server Tech Test
+
+[![Build Status](https://travis-ci.org/treborb/database_server_tech_test.svg?branch=master)](https://travis-ci.org/treborb/database_server_tech_test)
+[![codecov](https://codecov.io/gh/treborb/database_server_tech_test/branch/master/graph/badge.svg)](https://codecov.io/gh/treborb/database_server_tech_test)
+
+#### Ruby v2.3.3
+#### Sinatra
+
+### [Makers Academy] (http://www.makersacademy.com) - Week 10 Solo Practice Tech Test
+
+## Index
+* [Installation] (#Install)
+* [Tests] (#Tests)
+* [Usage] (#Usage)
 
 ### The brief
 
@@ -9,28 +21,28 @@ You receive a message from a prospective employer:
 
 Create a new git repository and write code to fulfill the brief to the best of your ability. We will be looking for clean, well tested code in your choice of technology. In addition, the last sentence of the brief implies that you should consider how the code could easily be extended to add an as-yet-unknown data store.
 
-### Technologies used
+## <a id="Install">Installation</a>
 
-Ruby v2.3.3
-
-Sinatra
-
-### Usage
 ```
 $ git clone https://github.com/treborb/database_server_tech_test.git
 $ cd database_server_tech_test
 $ bundle
+```
+## <a id="Usage">Usage</a>
+```
 $ rackup
 $ curl "http://localhost:4000/set?somekey=somevalue"
 $ curl "http://localhost:4000/get?key=somekey"
 ```
 
-### Alternate usage
+## Alternate usage
 ```
-$ git clone https://github.com/treborb/database_server_tech_test.git
-$ cd database_server_tech_test
-$ bundle
 $ rackup
 $ open "http://localhost:4000/set?somekey=somevalue"
 $ open "http://localhost:4000/get?key=somekey"
+```
+
+## <a id=“Tests">Running the tests</a>
+```ruby
+$ rspec
 ```

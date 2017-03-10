@@ -2,6 +2,9 @@
 require 'simplecov'
 SimpleCov.start
 
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
+
 ENV['RACK_ENV'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'app/app.rb')

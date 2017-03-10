@@ -23,16 +23,19 @@ feature 'Storing and retrieving key/value pairs using a web browser' do
     end
   end
 end
-feature 'Storing and retrieving key/value pairs using the API' do
-  describe 'API' do
-    it 'I can store a key value pair by passing them as URL params' do
-      get "http://localhost:4000/set?somekey=somevalue"
-      expect(response.body).to eq('Success')
-    end
 
-    it 'I can retrieve a value by passing the corresponding key as a URL param' do
-      get "http://localhost:4000/get?key=somekey"
-      expect(response.body).to eq('somevalue')
-    end
+Airborne.configure do |config|
+  config.rack_app = DatabaseServer
+end
+
+describe 'DatabaseServer' do
+  it 'I can store a key value pair by passing them as params' do
+    get "http://localhost:4000/set?somekey=somevalue"
+    expect(response.body).to eq('Success')
+  end
+
+  it 'I can retrieve a value by passing the corresponding key as a param' do
+    get "http://localhost:4000/get?key=somekey"
+    expect(response.body).to eq('somevalue')
   end
 end
