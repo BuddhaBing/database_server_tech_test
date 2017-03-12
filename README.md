@@ -3,15 +3,18 @@
 [![Build Status](https://travis-ci.org/treborb/database_server_tech_test.svg?branch=master)](https://travis-ci.org/treborb/database_server_tech_test)
 [![codecov](https://codecov.io/gh/treborb/database_server_tech_test/branch/master/graph/badge.svg)](https://codecov.io/gh/treborb/database_server_tech_test)
 
-#### Ruby v2.3.3
-#### Sinatra
-
 ### [Makers Academy] (http://www.makersacademy.com) - Week 10 Solo Practice Tech Test
 
-## Index
-* [Installation] (#Install)
-* [Tests] (#Tests)
-* [Usage] (#Usage)
+## Technologies
+* [Ruby v2.3.3](https://www.ruby-lang.org/en/)
+* [Sinatra](http://www.sinatrarb.com/)
+* [Rspec](http://rspec.info/)
+* [Capybara](https://github.com/teamcapybara/capybara)
+
+## Jump To
+* [Installation](#install)
+* [Usage](#usage)
+* [Tests](#tests)
 
 ### The brief
 
@@ -21,28 +24,30 @@ You receive a message from a prospective employer:
 
 Create a new git repository and write code to fulfill the brief to the best of your ability. We will be looking for clean, well tested code in your choice of technology. In addition, the last sentence of the brief implies that you should consider how the code could easily be extended to add an as-yet-unknown data store.
 
-## <a id="Install">Installation</a>
+## <a name="install">Installation</a>
 
 ```
 $ git clone https://github.com/treborb/database_server_tech_test.git
 $ cd database_server_tech_test
 $ bundle
 ```
-## <a id="Usage">Usage</a>
+
+## <a name="usage">Usage</a>
+
 ```
 $ rackup
 $ curl "http://localhost:4000/set?somekey=somevalue"
 $ curl "http://localhost:4000/get?key=somekey"
 ```
 
-## Alternate usage
+#### Alternate usage
 ```
 $ rackup
 $ open "http://localhost:4000/set?somekey=somevalue"
 $ open "http://localhost:4000/get?key=somekey"
 ```
 
-## <a id=“Tests">Running the tests</a>
+## <a name="tests">Running the tests</a>
 ```ruby
 $ rspec
 ```
